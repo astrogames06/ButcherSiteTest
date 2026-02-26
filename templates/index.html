@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ai.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg?v=123">
+    <title>Papa Joes Chicken</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="assets/logo.svg" alt="logo">
+            <h1 id="title">Papa Joe's Chicken</h1>
+        </div>
+
+        <div id="navbar_links">
+            <button onclick="scrollToSection(event, 'info-container')">
+                Home <img src="assets/home.svg" alt="home">
+            </button>
+            <button onclick="scrollToSection(event, 'location-container')">
+                Location <img src="assets/location.svg" alt="location">
+            </button>
+            <button onclick="scrollToSection(event, 'menu-container')">
+                Menu <img src="assets/menu.svg" alt="menu">
+            </button>
+            <button onclick="scrollToSection(event, 'contact-container')">
+                Contact <img src="assets/contact.svg" alt="menu">
+            </button>
+        </div>
+    </div>
+
+
+    <div id="ai-chat" class="close-chat">
+        <div class="ai-chat-title">
+            <img src="assets/robot.svg" alt="robot">
+            <p>AI Helper Chat</p>
+        </div>
+
+        <ul id="ai-chat-ul">
+
+        </ul>
+        
+        <div class="ai-chat-inp-container">
+            <input id="ai-chat-input" placeholder="Enter message to bot!">
+            <img id="ai-send-btn" onclick="send_ai()" src="assets/up-arrow.svg" alt="up-arrow">
+        </div>
+    </div>
+    <button onclick="openchat()" id="ai-btn">
+        <img src="assets/robot.svg" alt="robot">
+    </button>
+   
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
