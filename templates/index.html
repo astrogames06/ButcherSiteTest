@@ -6,32 +6,46 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="ai.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg?v=123">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <title>Papa Joes Chicken</title>
 </head>
 <body>
     <div id="navbar">
         <div id="logo">
             <img src="assets/logo.png" alt="logo">
-            <h1 id="title">Uncle Joes Butcher</h1>
         </div>
-
         <div id="navbar_links">
-            <button onclick="scrollToSection(event, 'info-container')">
-                Home <img src="assets/home.svg" alt="home">
-            </button>
-            <button onclick="scrollToSection(event, 'location-container')">
-                Location <img src="assets/location.svg" alt="location">
-            </button>
-            <button onclick="scrollToSection(event, 'menu-container')">
-                Menu <img src="assets/menu.svg" alt="menu">
-            </button>
-            <button onclick="scrollToSection(event, 'contact-container')">
-                Contact <img src="assets/contact.svg" alt="menu">
-            </button>
+            <button>Home</button>
+            <button>Location</button>
+            <button>Menu</button>
+            <button>Contact</button>
         </div>
     </div>
 
+    <div id="butcher-images">
+        <ul>
+            <li><img data-aos="fade-up" src="assets/butcher/guywithsteak.png" alt="Guy With Steak"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/manbutcheringbones.png" alt="Man butchering bones"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/meathangingup.png" alt="Meat hanging up"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/oldmanwithsteak.png" alt="Old Man with steak"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/sectionofmeat.png" alt="Section of meat"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/duckhangingup.png" alt="Duck hanging up"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/salami.png" alt="salami"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/oldmanwithhotdogs.png" alt="Section of meat"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/duckhangingup.png" alt="Duck hanging up"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/tomahawk.png" alt="Old Man with steak"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/legofham.png" alt="Section of meat"></li>
+            <li><img data-aos="fade-up" src="assets/butcher/lambhung.png" alt="Duck hanging up"></li>
+        </ul>
+    </div>
+
+    <center>
+        <button id="instagram-btn">
+            <img src="assets/insta.svg" alt="instragram">
+        </button>
+    </center>
 
     <div id="ai-chat" class="close-chat">
         <div class="ai-chat-title">
@@ -54,5 +68,11 @@
    
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+        });
+    </script>
 </body>
 </html>

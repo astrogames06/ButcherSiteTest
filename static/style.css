@@ -10,25 +10,18 @@
 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 214, 137);
-
-    position: fixed;  /* <-- makes it stick to top */
-    top: 0;           /* <-- top of viewport */
-    left: 0;          /* <-- align to left edge */
-    width: 100%;      /* <-- full width */
-    z-index: 1000; 
+    background-color: white;
 }
 
 #navbar #logo
 {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
     flex-shrink: 0;
-    justify-self: center;
+    width: 70vw;
 }
 
 @media (max-width: 730px) {
@@ -76,7 +69,6 @@
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    justify-content: flex-end;
     
     gap: 20px;
     margin-top: 10px;
@@ -89,8 +81,8 @@
     border-radius: 100px;
     border: none;
     font-weight: bold;
-    background-color: #FB983D;
     transition: transform 0.1s;
+    background-color: white;
     text-decoration: none;
     color: black;
     padding: 10px;
@@ -100,15 +92,60 @@
     align-items: center;
     justify-content: center;
     gap: 6px;
+    position: relative;
+    text-decoration: none;
 }
 
-#navbar_links button:hover
-{
-    transform: scale(1.1);
+#navbar_links button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0%;
+    height: 2px;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+#navbar_links button:hover::after {
+    width: 100%;
 }
 
 #navbar_links button img
 {
     width: 18px;
     height: 18px;
+}
+
+#instagram-btn
+{
+    margin-left: auto;
+    background-color: white;
+    border: none;
+    transition: all 0.2s;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#instagram-btn:hover
+{
+    background: linear-gradient(
+        45deg,
+        #5100ff,
+        #ff00ea,
+        #ff7b00,
+        #fff200
+    );
+    background-size: 300%;
+}
+
+#instagram-btn:hover img
+{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(142deg) brightness(102%) contrast(102%);
+}
+
+#instagram-btn img
+{
+    filter: invert(1);
+    width: 50px;
 }
