@@ -1,0 +1,19 @@
+#map-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+iframe
+{
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+iframe:focus
+{
+    outline: none !important;
+}
