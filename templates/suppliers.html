@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ai.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="page-styles/suppliers.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.png?v=123">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <title>Papa Joes Butcher</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="assets/logo.png" alt="logo">
+        </div>
+        <div id="navbar_links">
+            <button><a href="/">Home</a></button>
+            <button><a href="/about">About</a></button>
+            <button><a href="suppliers.html">Suppliers</a></button>
+            <button><a href="location.html">Location</a></button>
+        </div>
+    </div>
+
+    <center>
+        <button id="instagram-btn">
+            <img src="assets/insta.svg" alt="instragram">
+        </button>
+    </center>
+
+    <div id="suppliers">
+        <div class="supplier">
+            <img src="assets/suppliers/Cowobbee.webp" alt="Cowobbee Beef">
+            <h1>Cowobbee Beef</h1>
+            <p>Certified biodynamic pasture-raised Red Angus beef from Lynden Farm, grown by Paul Kurtz near Oberon, NSW.</p>
+        </div>
+
+        <div class="supplier">
+            <img src="assets/suppliers/Lynden.webp" alt="Lynden Lamb">
+            <h1>Lynden Lamb</h1>
+            <p>Certified biodynamic pasture-raised White Suffolk lamb from Lynden Farm, grown by Tammy Kurtz near Oberon, NSW.</p>
+        </div>
+
+        <div class="supplier">
+            <img src="assets/suppliers/Txuleta1882.webp" alt="Txuleta 1882">
+            <h1>Txuleta 1882</h1>
+            <p>Mature dairy cows raised by Josh and Jyoti in South Gippsland, finished on rich pasture. Inspired by the traditional Basque style of beef farming.</p>
+        </div>
+
+        <div class="supplier">
+            <img src="assets/suppliers/Gourmet+Goats.webp" alt="The Gourmet Goat Lady">
+            <h1>The Gourmet Goat Lady</h1>
+            <p>Free-range Boer chevon goats and capretto raised on Buena Vista by Jo and Craig Stewart in Collie, NSW.</p>
+        </div>
+
+        <div class="supplier">
+            <img src="assets/suppliers/Little+Hill+Farm.webp" alt="Little Hill Farm">
+            <h1>Little Hill Farm</h1>
+            <p>Pasture-raised Cobb Ross chickens and eggs grown by Kelly Eaton and Simon Carroll in the Hunter Valley, NSW.</p>
+        </div>
+
+        <div class="supplier">
+            <img src="assets/suppliers/Inglewood.gif" alt="Inglewood Organic">
+            <h1>Inglewood Organic</h1>
+            <p>Certified organic free-range Cobb Ross chickens grown in Inglewood, QLD.</p>
+        </div>
+
+        <div class="supplier">
+            <img src="assets/suppliers/StockinPiggle.webp" alt="Stockin Piggle">
+            <h1>Stockin Piggle</h1>
+            <p>Pasture-raised Berkshire and Hampshire pigs from Jason Bates in Stockinbingal, NSW.</p>
+        </div>
+
+        <div class="supplier">
+            <img src="assets/suppliers/WallendbeenPark.webp" alt="Wallendbeen Park">
+            <h1>Wallendbeen Park</h1>
+            <p>Pasture-raised Berkshire and Duroc cross pork and Wiltipoll lamb from Christoph and Annie in Wallendbeen, NSW.</p>
+        </div>
+
+        <div class="supplier">
+            <img src="assets/suppliers/Tathra+Place.webp" alt="Tathra Place Free Range">
+            <h1>Tathra Place Free Range</h1>
+            <p>Pasture-raised Wessex Saddleback pork and Aylesbury Pekin cross ducks grown by Luke and Pia Winder in Wombeyan Caves, NSW.</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="location">
+            <h1>Location</h1>
+            1 National St, Rozelle NSW 2039
+        </div>
+        <div id="hours">
+            <h1>Hours</h1>
+            Monday - Friday 8am - 6pm
+            <br>
+            <br>
+            Saturday 8am - 3pm
+            <br>
+            <br>
+            Sunday CLOSED
+        </div>
+        <div id="contact">
+            <h1>Contact</h1>
+            Ph: 02 4303 6723
+            <br>
+            <br>
+            E: contact@papajoesbutcher.com.au
+        </div>
+    </div>
+
+    <div id="ai-chat" class="close-chat">
+        <div class="ai-chat-title">
+            <img src="assets/robot.svg" alt="robot">
+            <p>AI Helper Chat</p>
+        </div>
+
+        <ul id="ai-chat-ul">
+
+        </ul>
+        
+        <div class="ai-chat-inp-container">
+            <input id="ai-chat-input" placeholder="Enter message to bot!">
+            <img id="ai-send-btn" onclick="send_ai()" src="assets/up-arrow.svg" alt="up-arrow">
+        </div>
+    </div>
+    <button onclick="openchat()" id="ai-btn">
+        <img src="assets/robot.svg" alt="robot">
+    </button>
+   
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

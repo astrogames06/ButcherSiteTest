@@ -33,6 +33,18 @@ Always try to answer based on this information.
 def index():
     return render_template("index.html")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/suppliers")
+def suppliers():
+    return render_template("suppliers.html")
+
+@app.route("/location")
+def location():
+    return render_template("location.html")
+
 @app.route("/gpt", methods=["POST"])
 def api():
     data = request.json

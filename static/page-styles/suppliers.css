@@ -1,0 +1,24 @@
+#suppliers
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#suppliers .supplier p
+{
+    width: 30vw;
+}
+
+#suppliers .supplier h1
+{
+    font-size: 100%;
+}
+
+#suppliers .supplier img
+{
+    width: 30vw;
+    height: 30vw;   
+    object-fit: cover;
+}

@@ -84,7 +84,6 @@
     transition: transform 0.1s;
     background-color: white;
     text-decoration: none;
-    color: black;
     padding: 10px;
     font-size: large;
 
@@ -94,6 +93,12 @@
     gap: 6px;
     position: relative;
     text-decoration: none;
+}
+
+#navbar_links button a
+{
+    text-decoration: none;
+    color: black;
 }
 
 #navbar_links button::after {
@@ -148,4 +153,20 @@
 {
     filter: invert(1);
     width: 50px;
+}
+
+#footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: rgb(241, 241, 241);
+    padding-top: 20px;
+}
+
+#footer div
+{
+    margin-bottom: 20px;
 }
