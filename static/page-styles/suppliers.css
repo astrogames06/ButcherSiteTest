@@ -6,6 +6,11 @@
     gap: 20px;
 }
 
+#suppliers .supplier
+{
+    width: 30%;
+}
+
 #suppliers .supplier p
 {
     width: 30vw;
