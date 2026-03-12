@@ -130,6 +130,9 @@
     transition: all 0.2s;
     border-radius: 20px;
     padding: 10px;
+    background-size: 100%;
+    transition: background-size 1s;
+    margin-bottom: 10px;
 }
 
 #instagram-btn:hover
@@ -141,7 +144,7 @@
         #ff7b00,
         #fff200
     );
-    background-size: 300%;
+    background-size: 200%;
 }
 
 #instagram-btn:hover img
